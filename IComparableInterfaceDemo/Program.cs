@@ -1,4 +1,5 @@
-﻿using System;
+﻿// IComparable and IComparabl<T> Interface Demo
+using System;
 
 namespace IComparableInterfaceDemo
 {
