@@ -88,11 +88,11 @@ namespace IComparableInterfaceDemo
                     SwapElements(anyArray, li, i);
             }
 
-            int FindIndexOfElementHavingTheLowestValue(T[] anyArray, int startIndex)
+            int FindIndexOfElementHavingTheLowestValue(T[] anyArray, int lowestValueIndex)
             {
-                int li = startIndex;
+                int li = lowestValueIndex;
 
-                for (int i = startIndex + 1; i < anyArray.Length; i++)
+                for (int i = lowestValueIndex + 1; i < anyArray.Length; i++)
                 {
                     if (anyArray[i].CompareTo(anyArray[li]) == -1)
                         li = i;
